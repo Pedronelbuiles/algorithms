@@ -9,7 +9,7 @@
  * La dificultad del ejercicio no recide en resolverlo sin mas, sino en resolverlo con un Time complexity no superior a O(n)
  */
 
-const same = (arrOne: number[], arrTwo: number[]) => {
+const same = (arrOne: number[], arrTwo: number[]):boolean => {
     console.time('same execution')
     return arrOne.every(element => arrTwo.indexOf(element**2) > -1 ? arrTwo.splice(arrTwo.indexOf(element**2), 1) : false)
 }
